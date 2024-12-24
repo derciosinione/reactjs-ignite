@@ -7,13 +7,13 @@ export function Comment() {
     <div className={style.comment}>
       <Avatar
         hasBorder={false}
-        src="https://avatars.githubusercontent.com/u/58776769?v=4"
+        src="https://github.com/Paulo-Lopes-Estevao.png"
       />
       <div className={style.commentBox}>
         <div className={style.commentContent}>
           <header>
             <div className={style.authorAndTime}>
-              <strong>Dercio Derone</strong>
+              <strong>Paulo Lopes</strong>
               <time title="11 de Maio as 08:23">Cerca de 1h atras</time>
             </div>
 

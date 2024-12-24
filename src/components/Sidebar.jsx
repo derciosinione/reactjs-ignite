@@ -15,7 +15,7 @@ export function Sidebar() {
         <Avatar src="https://avatars.githubusercontent.com/u/58776769?v=4" />
 
         <strong>Dercio Derone</strong>
-        <span>Web Developer</span>
+        <span>Software Developer</span>
       </div>
 
       <footer>
