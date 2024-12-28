@@ -29,12 +29,14 @@ export function Post({ author, contents, publishedAt }) {
     setComment([...comments, newCommentText]);
 
     setNewCommentText("");
-
-    console.log("Comentário criado");
   }
 
   function handleNewCommentTextChange(event) {
     setNewCommentText(event.target.value);
+  }
+
+  function deleteComment(contentKey) {
+    setComment(comments.filter((_, index) => index !== contentKey));
   }
 
   return (
@@ -88,7 +90,12 @@ export function Post({ author, contents, publishedAt }) {
 
       <div className={styles.commentList}>
         {comments.map((value, index) => (
-          <Comment key={index} content={value} />
+          <Comment
+            key={index}
+            contentKey={index}
+            content={value}
+            onDeleteComment={deleteComment}
+          />
         ))}
       </div>
     </article>
